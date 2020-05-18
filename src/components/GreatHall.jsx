@@ -6,9 +6,7 @@ const GreatHall = () => {
     <section>
       <h2>Students of Hogwarts</h2>
       <ul className="cards">
-        <Wizard/>
-        <Wizard/>
-        <Wizard/>
+        {/* Render Wizards Here*/}
       </ul>
     </section>
   )
