@@ -10,8 +10,12 @@ class Wizard extends Component {
     this.setState((prevState) => {return {clicked: !prevState.clicked}})
   }
 
+  handleDelete = () => {
+    this.props.handleDelete(this.props.wizard.id)
+  }
+
   render() {
-    const { house, id, image1, image2, name, wand } = this.props.wizard
+    const { house, image1, image2, name, wand } = this.props.wizard
 
     return (
         <li className={`card ${house}`}>
@@ -27,7 +31,7 @@ class Wizard extends Component {
             <div className="card_bottom">
               <p className="house_name">{house}</p>
               <p className="description">Wand: {wand}</p>
-              <button>
+              <button onClick={this.handleDelete}>
                 Graduate
               </button>
             </div>

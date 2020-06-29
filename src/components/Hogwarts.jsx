@@ -34,6 +34,16 @@ class Hogwarts extends Component {
     this.setState({house: house})
   }
 
+  handleDelete = (wizardId) => {
+    const removeWizard = () => {
+      this.setState((prevState) => {return {wizards: prevState.wizards.filter(wizard => wizard.id !== wizardId)}})
+    }
+
+    fetch(`http://localhost:4000/wizards/${wizardId}`, { method: "DELETE" })
+      .then(removeWizard)
+
+  }
+
   filterWizards = () => {
     return this.state.wizards.filter(wizard => {if (this.state.house === "All") { return wizard } else {return wizard.house === this.state.house}} )
   }
@@ -42,7 +52,7 @@ class Hogwarts extends Component {
     return (
       <main>
         <MaraudersMap house={this.state.house} handleSelect={this.handleSelect}/>
-        <GreatHall wizards={this.filterWizards()} />
+        <GreatHall wizards={this.filterWizards()} handleDelete={this.handleDelete}/>
         <SortingHat handleSubmit={this.handleSubmit}/>
       </main>
     )
