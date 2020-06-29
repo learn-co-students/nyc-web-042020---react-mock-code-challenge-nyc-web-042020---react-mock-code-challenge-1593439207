@@ -21,7 +21,9 @@ class App extends Component {
   }
 
   addNewWizard = (newWizard) => {
-    console.log(newWizard)
+    this.setState({
+      wizards: [...this.state.wizards, newWizard]
+    })
   }
 
   render() {
