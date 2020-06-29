@@ -5,11 +5,12 @@ import MaraudersMap from './MaraudersMap'
 
 class Hogwarts extends Component {
 
+
   render() {
     return (
       <main>
         <MaraudersMap/>
-        <GreatHall/>
+        <GreatHall props={this.props}/>
         <SortingHat/>
       </main>
     )
