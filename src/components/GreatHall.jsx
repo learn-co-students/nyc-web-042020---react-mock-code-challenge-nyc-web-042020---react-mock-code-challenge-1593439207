@@ -1,15 +1,17 @@
-import React from 'react';
-import Wizard from './Wizard'
+import React from "react";
+import Wizard from "./Wizard";
 
-const GreatHall = () => {
+let GreatHall = (props) => {
+  let wizCards = props.wizards.map((wizObj) => {
+    return <Wizard key={wizObj.id} wizard={wizObj} />;
+  });
+
   return (
     <section>
       <h2>Students of Hogwarts</h2>
-      <ul className="cards">
-        {/* Render Wizards Here*/}
-      </ul>
+      <ul className="cards">{wizCards}</ul>
     </section>
-  )
-}
+  );
+};
 
 export default GreatHall;
