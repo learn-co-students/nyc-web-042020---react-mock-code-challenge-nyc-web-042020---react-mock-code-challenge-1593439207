@@ -6,11 +6,32 @@ import Hogwarts from './components/Hogwarts'
 
 class App extends Component {
 
+  state = {
+    wizards: []
+  }
+
+  componentDidMount() {
+    fetch('http://localhost:4000/wizards')
+    .then(resp => resp.json())
+    .then(data => {
+      this.setState({
+        wizards: data
+      })
+    })
+  }
+
+  addNewWizard = (newWizard) => {
+    console.log(newWizard)
+  }
+
   render() {
     return (
       <div className="App">
         <Header />
-        <Hogwarts />
+        <Hogwarts 
+          wizards={this.state.wizards}
+          addNewWizard={this.addNewWizard}
+          />
       </div>
     );
   }
