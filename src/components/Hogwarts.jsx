@@ -6,10 +6,11 @@ import MaraudersMap from './MaraudersMap'
 class Hogwarts extends Component {
 
   render() {
+    const wizardArray = this.state
     return (
       <main>
         <MaraudersMap/>
-        <GreatHall/>
+        <GreatHall wizard={wizardArray}/>
         <SortingHat/>
       </main>
     )
