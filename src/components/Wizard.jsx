@@ -6,6 +6,10 @@ class Wizard extends Component {
     clicked: false
   }
 
+  handleClick = () => {
+    this.setState((prevState) => {return {clicked: !prevState.clicked}})
+  }
+
   render() {
 
     console.log(this.props)
@@ -20,7 +24,7 @@ class Wizard extends Component {
                 <h3>{name}</h3>
               </div>
               <div className="border">
-                <img src={this.state.clicked ? image2 : image1} alt={name}/>
+              <img src={this.state.clicked ? image2 : image1} alt={name} onClick={this.handleClick}/>
               </div>
             </div>
             <div className="card_bottom">
