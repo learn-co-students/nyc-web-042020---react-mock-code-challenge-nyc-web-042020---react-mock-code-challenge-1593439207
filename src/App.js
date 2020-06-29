@@ -27,11 +27,13 @@ class App extends Component {
   }
 
   houseFilter = (house) => {
+    let filteredArray
     if (house !== "All") {
-      this.state.wizards.filter((wizard) => {
+      filteredArray = this.state.wizards.filter((wizard) => {
         return wizard.house === house
       })
     }
+    console.log(filteredArray)
   }
 
   deleteWizard = (id) => {

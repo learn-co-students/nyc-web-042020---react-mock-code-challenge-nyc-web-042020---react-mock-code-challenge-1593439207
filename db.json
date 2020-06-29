@@ -7,6 +7,22 @@
       "house": "Gryffindor",
       "image1": "https://fsmedia.imgix.net/21/fd/33/16/2844/4ec3/bae9/57d38001e216/sonserina.jpeg?rect=0%2C0%2C1920%2C959&dpr=2&auto=format%2Ccompress&w=650",
       "image2": "https://img1.looper.com/img/gallery/professor-mcgonagalls-entire-backstory-explained/intro-1582830670.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Minerva McGonagall",
+      "wand": "Dragon Heartstring",
+      "house": "Gryffindor",
+      "image1": "https://fsmedia.imgix.net/21/fd/33/16/2844/4ec3/bae9/57d38001e216/sonserina.jpeg?rect=0%2C0%2C1920%2C959&dpr=2&auto=format%2Ccompress&w=650",
+      "image2": "https://img1.looper.com/img/gallery/professor-mcgonagalls-entire-backstory-explained/intro-1582830670.jpg"
+    },
+    {
+      "name": "hey",
+      "wand": "Dragon Heartstring",
+      "house": "Slytherin",
+      "image1": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcROncTpUXRSa3_VRtA52ihzOygBqh_gsdXE8w&usqp=CAU",
+      "image2": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEBUSExMSFRUSFRASFRIQFhUPEBAQFRUXFhUVFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGi0dHx0rLS0rKy0tLS0tLS0tLS0tLSstLS0tLS0tLS0tLS0tLS0tLS03LS0tLTc3NzctLSstLf/AABEIAKgBLAMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAFAAIDBAYBBwj/xAA4EAABBAEDAgQEAwcDBQAAAAABAAIDEQQFEiExQQZRYXETIoGRMqGxBxQjQlJi0RVy8CWCksHh/8QAGQEAAwEBAQAAAAAAAAAAAAAAAAIDAQQF/8QAIREAAgICAgIDAQAAAAAAAAAAAAECEQMhEjEEQRMiUWH/2gAMAwEAAhEDEQA/AMNOdoruqLCSbKn1CW3lQtSIroltdCY5IOQBMDwm70wPCaXIBl2DIUzJ+eUL3Vypd6wEFnT+qimk3BDZJui62dLQ1jngFa/wFh1vmNU2xfkQLJH0WOc5bjQ8pv7qWMFbw5nlzXJWTeimJJyDTch00YLeN5PP9l9VTc0gkXzYaD6lTaadkbYz1IrjyCE6pqO2SgOWyAfYf5UEjpb0E8aBrZCLva0k/wCEJ1KTc7aBwHix5u8vYJs2oljXO5txJv17BBMrPLQDRs8k/wBxVErElLQ3Nm3Tk+XT1ANKvKbLv/H09VSlyCTd9T+atsZw0fU+vqnqiF2zuYPwt8hSqy2PoVbh+eUDryu6m0NNei1MHHVlBrvyKlDqsKACh70kX8haIWGTUuOyLHt+SgDuvumv81gE48/qqk2QQfT9EQ0xocS3uQSFR1HFNn7oXYzjaslx5+f+fdXQ7e0t8x+aBREj6IrA/v5okhYsBSNp1eVhcar2rx/NfmqbByqLZNrZbxYLRGPETcCNHIMdTci2OFgOXEpVHspaPKx+EFyouURZs",
+      "id": 8
     }
   ]
 }
