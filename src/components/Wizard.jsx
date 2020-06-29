@@ -11,9 +11,6 @@ class Wizard extends Component {
   }
 
   render() {
-
-    console.log(this.props)
-
     const { house, id, image1, image2, name, wand } = this.props.wizard
 
     return (

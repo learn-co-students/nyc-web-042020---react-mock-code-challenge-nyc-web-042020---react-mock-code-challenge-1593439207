@@ -9,6 +9,20 @@ class Hogwarts extends Component {
     wizards: []
   }
 
+  handleSubmit = (wizardObj) => {
+    const configObj = {
+      method: "POST",
+      headers: {
+        "content-type": "application/json"
+      },
+      body: JSON.stringify(wizardObj)
+    }
+
+    fetch("http://localhost:4000/wizards", configObj)
+      .then(resp => resp.json())
+      .then(json => this.setState((prevState) => { return {wizards: [...prevState.wizards, json]} }))
+  }
+
   componentDidMount() {
     fetch("http://localhost:4000/wizards")
       .then(resp => resp.json())
@@ -20,7 +34,7 @@ class Hogwarts extends Component {
       <main>
         <MaraudersMap/>
         <GreatHall wizards={this.state.wizards} />
-        <SortingHat/>
+        <SortingHat handleSubmit={this.handleSubmit}/>
       </main>
     )
   }
