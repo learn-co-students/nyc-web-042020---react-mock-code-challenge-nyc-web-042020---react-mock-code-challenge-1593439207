@@ -5,11 +5,21 @@ import MaraudersMap from './MaraudersMap'
 
 class Hogwarts extends Component {
 
+
+
+
   render() {
+    let arrayOfComponents = this.props.wizardList.map((wizard) => {
+      return  <GreatHall
+      wizardItem = {wizard}
+      key = {wizard.id}
+      toggler = {this.props.toggler}
+      />
+    })
     return (
       <main>
         <MaraudersMap/>
-        <GreatHall/>
+      {  arrayOfComponents}
         <SortingHat/>
       </main>
     )
