@@ -6,7 +6,14 @@ import MaraudersMap from './MaraudersMap'
 class Hogwarts extends Component {
 
   state = {
-    wizards: []
+    wizards: [],
+    house: "All"
+  }
+
+  componentDidMount() {
+    fetch("http://localhost:4000/wizards")
+      .then(resp => resp.json())
+      .then(json => this.setState({wizards: json}))
   }
 
   handleSubmit = (wizardObj) => {
@@ -23,17 +30,19 @@ class Hogwarts extends Component {
       .then(json => this.setState((prevState) => { return {wizards: [...prevState.wizards, json]} }))
   }
 
-  componentDidMount() {
-    fetch("http://localhost:4000/wizards")
-      .then(resp => resp.json())
-      .then(json => this.setState({wizards: json}))
+  handleSelect = (house) => {
+    this.setState({house: house})
+  }
+
+  filterWizards = () => {
+    return this.state.wizards.filter(wizard => {if (this.state.house === "All") { return wizard } else {return wizard.house === this.state.house}} )
   }
 
   render() {
     return (
       <main>
-        <MaraudersMap/>
-        <GreatHall wizards={this.state.wizards} />
+        <MaraudersMap house={this.state.house} handleSelect={this.handleSelect}/>
+        <GreatHall wizards={this.filterWizards()} />
         <SortingHat handleSubmit={this.handleSubmit}/>
       </main>
     )
