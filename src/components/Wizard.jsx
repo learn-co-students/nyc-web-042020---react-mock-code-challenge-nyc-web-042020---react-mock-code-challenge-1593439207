@@ -14,6 +14,16 @@ class Wizard extends Component {
     })
   }
 
+  handleDelete = (e) => {
+    let id = this.props.wizardObj.id
+    fetch(`http://localhost:4000/wizards/${id}`, {
+      method: "DELETE"
+    })
+    
+    this.props.deleteWizard(id)
+    //do a fetch delete with this id
+    //send to function in App to delete this id from the wizard array 
+  }
 
   render() {
     let {name, wand, house, image1, image2} = this.props.wizardObj
@@ -37,7 +47,7 @@ class Wizard extends Component {
             <div className="card_bottom">
               <p className="house_name">{house}</p>
               <p className="description">Wand: {wand}</p>
-              <button>
+              <button onClick={this.handleDelete}>
                 Graduate
               </button>
             </div>

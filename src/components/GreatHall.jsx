@@ -7,7 +7,10 @@ const GreatHall = (props) => {
       <h2>Students of Hogwarts</h2>
       <ul className="cards">
         {props.wizards.map((wizard) => {
-          return <Wizard key={wizard.id} wizardObj={wizard}/>
+          return <Wizard 
+            key={wizard.id} 
+            wizardObj={wizard} 
+            deleteWizard={props.deleteWizard}/>
         })}
       </ul>
     </section>

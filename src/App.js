@@ -26,6 +26,24 @@ class App extends Component {
     })
   }
 
+  houseFilter = (house) => {
+    if (house !== "All") {
+      this.state.wizards.filter((wizard) => {
+        return wizard.house === house
+      })
+    }
+  }
+
+  deleteWizard = (id) => {
+    console.log(id)
+    let newWizardArray = this.state.wizards.filter((wizard) => {
+      return wizard.id !== id
+    })
+    this.setState({
+      wizards: newWizardArray
+    })
+  }
+
   render() {
     return (
       <div className="App">
@@ -33,6 +51,8 @@ class App extends Component {
         <Hogwarts 
           wizards={this.state.wizards}
           addNewWizard={this.addNewWizard}
+          houseFilter={this.houseFilter}
+          deleteWizard={this.deleteWizard}
           />
       </div>
     );
