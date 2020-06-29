@@ -47,6 +47,14 @@
       "house": "Gryffindor",
       "image1": "https://fsmedia.imgix.net/21/fd/33/16/2844/4ec3/bae9/57d38001e216/sonserina.jpeg?rect=0%2C0%2C1920%2C959&dpr=2&auto=format%2Ccompress&w=650",
       "image2": "https://img1.looper.com/img/gallery/professor-mcgonagalls-entire-backstory-explained/intro-1582830670.jpg"
+    },
+    {
+      "name": "Dumbledore",
+      "wand": "Eldar",
+      "house": "",
+      "image1": "https://i.pinimg.com/originals/da/b3/d1/dab3d1f464ee0488f6b765af61d3c65f.jpg",
+      "image2": "https://upload.wikimedia.org/wikipedia/en/f/fe/Dumbledore_and_Elder_Wand.JPG",
+      "id": 7
     }
   ]
 }
