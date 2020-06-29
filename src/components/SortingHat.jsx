@@ -2,6 +2,22 @@ import React, { Component } from 'react';
 
 class SortingHat extends Component {
 
+  // handleSubmit = (event) => {
+  //   event.preventDefault()
+  //   fetch("http://localhost:4000/wizards"),{
+  //     method: "POST",
+  //     headers: {
+  //       "content-type": "application/json",
+  //     },
+  //     body: JSON.stringify({
+
+  //     })
+
+  //   }
+
+
+  // }
+
   render() {
 
     return (
