@@ -47,6 +47,46 @@
       "house": "Gryffindor",
       "image1": "https://fsmedia.imgix.net/21/fd/33/16/2844/4ec3/bae9/57d38001e216/sonserina.jpeg?rect=0%2C0%2C1920%2C959&dpr=2&auto=format%2Ccompress&w=650",
       "image2": "https://img1.looper.com/img/gallery/professor-mcgonagalls-entire-backstory-explained/intro-1582830670.jpg"
+    },
+    {
+      "name": "Sirius Black",
+      "house": "",
+      "image1": "",
+      "image2": "",
+      "wand": "Unknown",
+      "id": 7
+    },
+    {
+      "name": "Fred Weasley",
+      "house": "",
+      "image1": "https://pm1.narvii.com/6580/3ab20f6cb2e51858a2c098b2f571da6cf9622117_00.jpg",
+      "image2": "https://cdn.staticneo.com/w/harrypotter/thumb/b/b4/Fred.PNG/200px-Fred.PNG",
+      "wand": "Dragon Heartstring",
+      "id": 8
+    },
+    {
+      "name": "George Weasley",
+      "house": "",
+      "image1": "https://vignette.wikia.nocookie.net/harrypotter/images/2/2a/DH_promo_front_closeup_George_Weasley.jpg",
+      "image2": "https://a.wattpad.com/cover/79854293-352-k742045.jpg",
+      "wand": "Phoenix Feather",
+      "id": 9
+    },
+    {
+      "name": "Pansy Parkinson",
+      "house": "Slytherin",
+      "image1": "https://i.pinimg.com/originals/18/08/39/180839e277064516b81e19b9458f3439.jpg",
+      "image2": "https://pm1.narvii.com/6469/c34758ccdc390241b9ec254ebd252092ad3faf16_hq.jpg",
+      "wand": "Slug",
+      "id": 10
+    },
+    {
+      "name": "Cho Chang",
+      "house": "Ravenclaw",
+      "image1": "https://am21.mediaite.com/tms/cnt/uploads/2019/07/Cho-Chang-Deserve-Better.jpg",
+      "image2": "https://img1.nickiswift.com/img/gallery/whatever-happened-to-the-girl-who-played-cho-chang-in-harry-potter/intro-1542052562.jpg",
+      "wand": "something boring",
+      "id": 11
     }
   ]
 }
