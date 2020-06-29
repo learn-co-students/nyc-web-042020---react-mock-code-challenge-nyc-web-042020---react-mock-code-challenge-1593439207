@@ -25,7 +25,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        name={this.state.students.map(student => <Hogwarts name={student.name} key={student.id} house={student.house} wand={student.wand}/>)}
+        {this.state.students.map(student => <Hogwarts name={student.name} key={student.id} house={student.house}/>)}
       </div>
     );
   }
