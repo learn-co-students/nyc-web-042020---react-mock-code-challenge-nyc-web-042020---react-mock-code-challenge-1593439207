@@ -5,8 +5,8 @@ import Header from './components/Header'
 import Hogwarts from './components/Hogwarts'
 
 class App extends Component {
-
   render() {
+    // console.log(this.state.wizardList)
     return (
       <div className="App">
         <Header />
