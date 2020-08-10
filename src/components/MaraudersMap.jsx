@@ -6,7 +6,7 @@ class MaraudersMap extends Component {
     return (
       <nav>
         <h2>Houses of Hogwarts</h2>
-        <select id="map">
+        <select onChange={e => this.props.handleSelection(e)} id="map">
           <option value="All">All</option>
           <option value="Gryffindor">Gryffindor</option>
           <option value="Hufflepuff">Hufflepuff</option>
